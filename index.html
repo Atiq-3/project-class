@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: grey;
+        }
+        #one{
+            height: 50px;
+            width: 90px;
+            border-radius: 10px;
+        }
+        #two{
+            height: 50px;
+            width: 90px;
+            border-radius: 10px;
+        }
+        #three{
+            height: 50px;
+            width: 90px;
+            border-radius: 10px;
+        }
+        #first{
+            height: 1500px;
+            width: 100%;
+            background-color: grey;
+            visibility: hidden;
+            position: absolute;
+        }
+        .photo{
+            height: 300px;
+            width: 400px;
+        }
+
+        #second{
+            height: 1500px;
+            width: 100%;
+            background-color: rgb(247, 193, 193);
+            visibility: hidden;
+            position: absolute;
+        }
+
+        #third{
+            height: 1500px;
+            width: 100%;
+            background-color: rgb(202, 177, 177);
+            visibility: hidden;
+            position: absolute;
+        }
+    </style>
+</head>
+<body> 
+    <div class="parent">
+    <button onclick="action()" id="one">Action Movie</button>
+    <button onclick="comedy()" id="two">comedy Movie</button>
+    <button onclick="horror()" id="three">horror Movie</button>
+   </div>
+
+    <div id="first">
+        <img class="photo" src="js\js\photo\Baahubali_The_Beginning_poster.jpg" alt="cat pic">
+        <h1>Baahubali</h1>
+        <img class="photo" src="js\js\photo\download.jpg" alt="">
+        <h1>Singham</h1>
+        <img class="photo" src="js\js\photo\download (1).jpg" alt="">
+        <h1>Avenger</h1>
+        <img class="photo" src="js\js\photo\download (2).jpg" alt="">
+        <h1>John Wick</h1>
+    </div>
+
+    <div id="second">
+        <img class="photo" src="js\js\photo\download (4).jpg" alt="cat pic">
+        <h1>Dhamaal</h1>
+        <img class="photo" src="js\js\photo\download (5).jpg" alt="">
+        <h1>Khel Khel Mein</h1>
+        <img class="photo" src="js\js\photo\Hera-Pheri-1024x709.jpg" alt="">
+        <h1>Hera pheri</h1>
+        <img class="photo" src="js\js\photo\images.jpg" alt="">
+        <h1>Fukrey</h1>
+    </div>
+
+    <div id="third">
+        <img class="photo" src="js\js\photo\download (6).jpg" alt="cat pic">
+        <h1>Munja</h1>
+        <img class="photo" src="js\js\photo\download (7).jpg" alt="">
+        <h1>Smile</h1>
+        <img class="photo" src="js\js\photo\images (1).jpg" alt="">
+        <h1>Raaz Dar ka</h1>
+        <img class="photo" src="js\js\photo\images (2).jpg" alt="">
+        <h1>bulbbul</h1>
+    </div>
+<script>
+      function action(){
+       document.getElementById('first').style.visibility="visible"
+       document.getElementById('second').style.visibility="hidden"
+         document.getElementById('third').style.visibility="hidden"
+      }
+
+      function comedy(){
+       document.getElementById('second').style.visibility="visible"
+       document.getElementById('first').style.visibility="hidden"
+        document.getElementById('third').style.visibility="hidden"
+
+      }
+
+      function horror(){
+       document.getElementById('second').style.visibility="hidden"
+       document.getElementById('first').style.visibility="hidden"
+       document.getElementById('third').style.visibility="visible"
+
+      }
+</script>
+</body>
+</html>
